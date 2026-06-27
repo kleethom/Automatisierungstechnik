@@ -81,10 +81,7 @@ Es wurden drei lineare Regressionsmodelle trainiert.
 ## Ergebnisse
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 </style>
 <table border="1" class="dataframe">
@@ -178,10 +175,7 @@ regression/reg_Außerlechner-Kleemayr.csv
 Hier die Vorschau zu den regessions Daten:
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 </style>
 <table border="1" class="dataframe">
@@ -255,10 +249,6 @@ Als Klassifikationsmodell wurde ein Random Forest verwendet.
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
 </style>
 <table border="1" class="dataframe">
