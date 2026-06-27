@@ -81,9 +81,6 @@ Es wurden drei lineare Regressionsmodelle trainiert.
 ## Ergebnisse
 
 <div>
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -175,9 +172,6 @@ regression/reg_Außerlechner-Kleemayr.csv
 Hier die Vorschau zu den regessions Daten:
 
 <div>
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -249,8 +243,6 @@ Als Klassifikationsmodell wurde ein Random Forest verwendet.
 
 
 <div>
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
