@@ -1,7 +1,8 @@
 # Automatisierungstechnik – IIoT Projekt
 ## Aufgabe 12 – Datenanalyse mit Python
 
-**Name:** Mathias Außerlechner & Thomas Kleemayr  
+**Name:**  Mathias Außerlechner & Thomas Kleemayr  
+
 **Projekt:** MQTT-Datenerfassung, Visualisierung, Regression und Klassifikation
 
 ---
@@ -85,13 +86,6 @@ Es wurden drei lineare Regressionsmodelle trainiert.
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -106,21 +100,23 @@ Es wurden drei lineare Regressionsmodelle trainiert.
   <tbody>
     <tr>
       <th>0</th>
-      <td>fill_level_grams_red, fill_level_grams_blue, f...</td>
+      <td>fill_level_grams_red, 
+      fill_level_grams_blue, 
+      fill_level_grams_green</td>
       <td>Linear</td>
       <td>11.288824</td>
       <td>16.015207</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>fill_level_grams_red, fill_level_grams_blue, f...</td>
+      <td>fill_level_grams_red, fill_level_grams_blue, fill_level_grams_green, vibration_index_red, vibration_index_blue, vibration_index_green</td>
       <td>Linear</td>
       <td>0.120408</td>
       <td>0.141158</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>fill_level_grams_red, fill_level_grams_blue, f...</td>
+      <td>fill_level_grams_red, fill_level_grams_blue, fill_level_grams_green, vibration_index_red, vibration_index_blue, vibration_index_green, temperature_red, temperature_blue, temperature_green</td>
       <td>Linear</td>
       <td>0.119477</td>
       <td>0.139538</td>
@@ -187,13 +183,6 @@ Hier die Vorschau zu den regessions Daten:
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -271,13 +260,6 @@ Als Klassifikationsmodell wurde ein Random Forest verwendet.
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -427,12 +409,16 @@ Testgenauigkeit:
 
 # Konfusionsmatrix
 
-Hier einen Screenshot der Konfusionsmatrix einfügen.
 
 ![alt text](<Images/Confusion Matrix.png>)
 
----
 
+
+# Interpretation
+
+Die Confusion Matrix zeigt, dass das Modell insgesamt eine hohe Klassifikationsgenauigkeit von etwa 94 % erreicht. Von 95 intakten Flaschen wurden 91 korrekt erkannt, lediglich 4 wurden fälschlicherweise als defekt klassifiziert. Von 7 tatsächlich defekten Flaschen wurden 5 korrekt erkannt, während 2 Defekte übersehen wurden. Das Modell erkennt intakte Flaschen somit sehr zuverlässig, während die Erkennung defekter Flaschen aufgrund ihrer geringen Anzahl im Datensatz etwas schwieriger ist. Insgesamt eignet sich das Modell gut zur Erkennung von Flaschenzuständen, weist jedoch noch Verbesserungspotenzial bei der Erkennung seltener Defekte auf.
+
+---
 
 # Verwendete Bibliotheken
 
