@@ -1,7 +1,8 @@
 from threading import Thread
+import time
 
 from mqtt_client.mqtt_client import start as mqtt_start
-from visualisierung.visualisierung import start_visualisierung
+
 
 mqtt_thread = Thread(
     target=mqtt_start,
@@ -10,4 +11,7 @@ mqtt_thread = Thread(
 
 mqtt_thread.start()
 
-start_visualisierung()
+print("MQTT läuft. Liveplot separat im Jupyter Notebook starten.")
+
+while True:
+    time.sleep(1)

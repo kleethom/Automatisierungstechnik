@@ -1,0 +1,4 @@
+Genutzte Spalten (X),Modell-Typ,MSE Training,MSE Test
+"fill_level_grams_red, fill_level_grams_blue, fill_level_grams_green",Linear,11.288824041286574,16.015206926569086
+"fill_level_grams_red, fill_level_grams_blue, fill_level_grams_green, vibration_index_red, vibration_index_blue, vibration_index_green",Linear,0.12040821710911175,0.1411580466482419
+"fill_level_grams_red, fill_level_grams_blue, fill_level_grams_green, vibration_index_red, vibration_index_blue, vibration_index_green, temperature_red, temperature_blue, temperature_green",Linear,0.11947683554278676,0.13953771597117892
